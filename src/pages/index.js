@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import '../components/styles.module.css'
 
 export default () => (
 	<div>
