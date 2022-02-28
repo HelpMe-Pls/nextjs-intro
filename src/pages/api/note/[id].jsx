@@ -41,7 +41,7 @@ const handler = nc()
 		}
 		const i = notes.findIndex((n) => n.id === parseInt(req.query.id))
 
-		// modifying the source [notes] so we're not using .filter() here
+		// modifying [notes] from the source so we're not using .filter() here
 		notes.splice(i, 1)
 
 		res.json({ data: req.query.id })
