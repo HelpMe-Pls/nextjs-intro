@@ -2,6 +2,11 @@
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui'
 // import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const BrowserComponent = dynamic(() => import('../components/browser'), {
+	ssr: false,
+})
 
 export function getStaticProps() {
 	return {
@@ -24,6 +29,7 @@ export default ({ content }) => (
 				height: '100%',
 			}}
 		>
+			<BrowserComponent /> {/* this won't get pre-rendered*/}
 			<h1 sx={{ fontSize: 8, my: 0 }}>{content.title}</h1>
 		</div>
 	</div>
