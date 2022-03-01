@@ -29,8 +29,8 @@ export default ({ content }) => (
 				height: '100%',
 			}}
 		>
-			<BrowserComponent /> {/* this won't get pre-rendered*/}
 			<h1 sx={{ fontSize: 8, my: 0 }}>{content.title}</h1>
+			<BrowserComponent /> {/* this won't get pre-rendered*/}
 		</div>
 	</div>
 )
