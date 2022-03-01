@@ -1,13 +1,11 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui'
-// import { useRouter } from 'next/router'
-// import Link from 'next/link'
 
+// executed at run-time
 export async function getServerSideProps({ params, req, res }) {
 	const response = await fetch(`${process.env.API_URL}/api/note/${params.id}`)
 
-	// so much power!
 	if (!response.ok) {
 		res.writeHead(302, { Location: '/notes' })
 		res.end()

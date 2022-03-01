@@ -8,6 +8,7 @@ const BrowserComponent = dynamic(() => import('../components/browser'), {
 	ssr: false,
 })
 
+// executed at build-time (only used for the page, NOT the component)
 export function getStaticProps() {
 	return {
 		props: {

@@ -41,6 +41,7 @@ export default ({ notes }) => {
 	)
 }
 
+// executed at run-time
 export async function getServerSideProps() {
 	const res = await fetch(`${process.env.API_URL}/api/note/`)
 	const { data } = await res.json()
