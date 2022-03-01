@@ -1,4 +1,1 @@
-# Next.js course
-> Learn Next.js
-
-Follow along with [the course](https://hendrixer.github.io/nextjs-course/)
+A playground to learn the basics of [NextJS](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=nav-cta&utm_campaign=next-website)
